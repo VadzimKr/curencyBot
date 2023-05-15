@@ -40,6 +40,7 @@ def empty_query(query):
         bot.answer_inline_query(query.id, [r])
     except Exception as e:
         print(e)
+        error_fun("Ошибка", e, query)
 
 
 def curency2(cur1, cur2, query):
